@@ -7,10 +7,11 @@ Welcome to lorawan's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
  
    license
    readme
+   contents
 
 Another simple header!
 ++++++++++++++++++++++
