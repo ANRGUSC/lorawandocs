@@ -10,7 +10,7 @@ Welcome to lorawan's documentation!
 .. toctree::
    :maxdepth: 4
  
-   playing_with_rn2903
+   connectingrn2903
    license
    readme
    contents
