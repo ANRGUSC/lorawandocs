@@ -1,7 +1,7 @@
 **Making the first communication ready for LORA**
 =================================================
 
-First we need to find out which serial port our rn2903a module is connected to. As we can see from the image below, rn2903 module is connected to COM3 serial port.
+First we need to find out which serial port our rn2903a module is connected to. As we can see from the image below, rn2903a module is connected to COM3 serial port.
 
 .. image:: pic1.png
   :width: 800
@@ -34,6 +34,7 @@ Now we can go ahead and start communicating with the module.
 For communicating with the module, the default serial port setting is 57600 bps. Once set on your terminal, you can communicate with the module. The list of available command can be retrieved here.
 
 There are 3 level of commands :
+
 * **sys** for system command
 * **mac** for LoRaWan protocol related command
 * **radio** for low level radio transmission
@@ -50,6 +51,7 @@ The different set of the commands are:
 * **radio get pwr** -> Power level gives the power in dB of the transmitter ; values are from -3db to 15dB.
 
 Now we can also change the power to 14dB to get more power and better link budget (this will consume 44mA/h and get 151dB as link budget)
+
 * **radio set pwr 14** -> Sets the power to 14dB.
 * **radio get pwr** -> Shows the power level.
 
@@ -60,6 +62,8 @@ The image below shows the execution of the above said commands on Teraterm and t
   :align: center
   :height: 400
   :alt: Alternative text
+
+Next step is setting up the rn2903 library and playing with helping functions present in the library. Please check out the next section of the documentation.
 
 
 
