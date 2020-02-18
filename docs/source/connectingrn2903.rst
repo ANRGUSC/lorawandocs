@@ -1,6 +1,9 @@
 **Making the first communication ready for LORA**
 =================================================
 
+**Setting up serial port communication using TeraTerm**
++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 First we need to find out which serial port our rn2903a module is connected to. As we can see from the image below, rn2903a module is connected to COM3 serial port.
 
 .. image:: pic1.png
@@ -39,6 +42,9 @@ There are 3 level of commands :
 * **mac** for LoRaWan protocol related command
 * **radio** for low level radio transmission
 
+**Commands to check RN2903 parameters**
++++++++++++++++++++++++++++++++++++++++
+
 The different set of the commands are:
 
 * **sys get ver** returns the firmware version, it is a good way to ensure the circuit works.
@@ -63,7 +69,7 @@ The image below shows the execution of the above said commands on Teraterm and t
   :height: 400
   :alt: Alternative text
 
-Next step is setting up the rn2903 library and playing with helping functions present in the library. Please check out the next section of the documentation.
+Next step is setting up the rn2903 library and playing with helper functions present in the **RN2903 library**. Please check out the next section of the documentation.
 
 
 

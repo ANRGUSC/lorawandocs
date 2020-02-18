@@ -263,7 +263,7 @@ The below image shows the execution of the above said helper functions and their
   :height: 400
   :alt: Alternative text
 
-
+In the next section, we are going to set up the **Things Network**.
 
 
 
