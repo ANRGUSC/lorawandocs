@@ -2,8 +2,9 @@ Welcome to lorawan's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 5
+   :maxdepth: 8
  
+   lora
    connectingrn2903
    rn2903library
    license
