@@ -7,6 +7,7 @@ Welcome to lorawan's documentation!
    lora
    connectingrn2903
    rn2903library
+   thingsnetwork
    license
    readme
    contents
