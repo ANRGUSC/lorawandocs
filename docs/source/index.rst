@@ -1,6 +1,8 @@
 Welcome to lorawan's documentation!
 ===================================
 
+Contents:
+
 .. toctree::
    :maxdepth: 8
  
