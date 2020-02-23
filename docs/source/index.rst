@@ -2,12 +2,13 @@ Welcome to lorawan's documentation!
 ===================================
 
 .. toctree::
-   :maxdepth: 8
+   :maxdepth: 10
  
    lora
    connectingrn2903
    rn2903library
    thingsnetwork
+   sendingdata
    license
    readme
    contents
