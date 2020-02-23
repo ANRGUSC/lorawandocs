@@ -33,6 +33,22 @@ Devices can communicate with applications that they’ve been registered to. To 
 
 * You will be redirected to the newly added Application page where you can find the generated App EUI and Access Keys.
 
+**From the screenshots below, you can see the application named anrg_app created by me and the application details.**
+
+.. image:: pic9.png
+  :width: 800
+  :align: center
+  :height: 400
+  :alt: Alternative text
+
+.. image:: pic10.png
+  :width: 800
+  :align: center
+  :height: 400
+  :alt: Alternative text
+
+
+
 **Devices on Things Network**
 +++++++++++++++++++++++++++++
 
@@ -66,7 +82,7 @@ To use the default Over The Air Activation (OTAA) you will need to register your
 
    * For App EUI, select the generated EUI from the list.
 
-     .. image:: pic7.png
+     .. image:: pic8.png
        :width: 800
        :align: center
        :height: 400
@@ -75,6 +91,23 @@ To use the default Over The Air Activation (OTAA) you will need to register your
 4. Click Register to finish.
 
 You will be redirected to the newly registered device where you can find the generated App Key needed to activate the device.
+
+
+**From the screenshots below, you can see the device anrg_dev1 created by me and its credentials. From the second screenshot you can see the appkey and appeui of the appplication to which this device is registered to.**
+
+.. image:: pic11.png
+  :width: 800
+  :align: center
+  :height: 400
+  :alt: Alternative text
+
+.. image:: pic12.png
+  :width: 800
+  :align: center
+  :height: 400
+  :alt: Alternative text
+
+**Thus, I have created an application called anrg_app and registered a device called anrg_dev1 to this application.**
 
 
      
