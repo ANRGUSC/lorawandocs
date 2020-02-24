@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>MQTT Paho &#8212; lorawan  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="License" href="license.html" />
+    <link rel="prev" title="Connecting RN2903a module to the Things Network" href="sendingdata.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="license.html" title="License"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="sendingdata.html" title="Connecting RN2903a module to the Things Network"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">lorawan  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="mqtt-paho">
+<h1><strong>MQTT Paho</strong><a class="headerlink" href="#mqtt-paho" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-paho">
+<h2><strong>What is Paho</strong><a class="headerlink" href="#what-is-paho" title="Permalink to this headline">¶</a></h2>
+<p>The Paho project provides scalable open-source implementations of open and standard messaging protocols aimed at new, exisiting, and emerging applications for Machine-to-Machine (M2M) and Internet of Things (IoT).</p>
+<p>Paho reflects the inherent physical and cost contraints of device connectivity. Objectives include effective levels of decoupling between devices and applications, designed to keep markets open and encourage the rapid growth of scalable Web and Enterprise middleware and applications. Paho initially started with MQTT publish/subscribe client implementations for use on embedded platforms, and in the future will bring corresponding server support as determined by the community.</p>
+</div>
+<div class="section" id="installing-paho-mqtt-client">
+<h2><strong>Installing paho-mqtt client</strong><a class="headerlink" href="#installing-paho-mqtt-client" title="Permalink to this headline">¶</a></h2>
+<p>You can Install the MQTT client using PIP with the command:</p>
+<p><strong>pip install paho-mqtt</strong></p>
+</div>
+<div class="section" id="eclipse-paho-mqtt-client-script">
+<h2><strong>Eclipse Paho mqtt client script</strong><a class="headerlink" href="#eclipse-paho-mqtt-client-script" title="Permalink to this headline">¶</a></h2>
+<p>The image below shows the mqtt paho client script. Using this the user would be able to get the data on his local instance. Therefore he would be able to save the sensor data if needed.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/pic16.png"><img alt="Alternative text" src="_images/pic16.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">MQTT Paho python script</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Before running the script, a few things need to be changed in the script.</p>
+<ol class="arabic simple">
+<li><p>You need <strong>change the arguments to the username_pw_set function</strong>. <strong>First argumen**t should be the **application name</strong> that you chose on the Things Network. <strong>Second argument</strong> should be the <strong>Access Key on the application</strong> which you can get from the Things Network.</p></li>
+<li><p>Then <strong>change the arguments in the connect function</strong>. The first argument should be the region to which you registered your device to on the Things Network.In my case, <strong>“us-west.thethings.network”</strong>.</p></li>
+</ol>
+<p>Now run the script using <strong>python paho_mqtt_v2.py</strong> command on the Windows terminal.</p>
+<p>You can see the output on the Windows terminal. You could see the packets being sent and different parameters with which the packet was transmittes and received.</p>
+<p>The below image shows the <strong>output of the paho_mqtt_v2 script</strong>.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/pic17.png"><img alt="Alternative text" src="_images/pic17.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">Output of MQTT Paho python script</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Thus we can observe the packet and network parameters using MQTT Paho.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><strong>MQTT Paho</strong></a><ul>
+<li><a class="reference internal" href="#what-is-paho"><strong>What is Paho</strong></a></li>
+<li><a class="reference internal" href="#installing-paho-mqtt-client"><strong>Installing paho-mqtt client</strong></a></li>
+<li><a class="reference internal" href="#eclipse-paho-mqtt-client-script"><strong>Eclipse Paho mqtt client script</strong></a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="sendingdata.html"
+                        title="previous chapter"><strong>Connecting RN2903a module to the Things Network</strong></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="license.html"
+                        title="next chapter">License</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/mqttpaho.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="license.html" title="License"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="sendingdata.html" title="Connecting RN2903a module to the Things Network"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">lorawan  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Sukruth Babu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.1.
+    </div>
+  </body>
+</html>

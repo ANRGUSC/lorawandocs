@@ -2,7 +2,7 @@
 ==================
 
 
-**CREATING THE RN2903 PACKAGE AND INSTALLING IT**
+**Creating the RN2903 package and installing it**
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
 * First we download the rn2903-lora-library file into our system.

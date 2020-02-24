@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Things Network &#8212; lorawan  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Connecting RN2903a module to the Things Network" href="sendingdata.html" />
+    <link rel="prev" title="RN2903 LIBRARY" href="rn2903library.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="sendingdata.html" title="Connecting RN2903a module to the Things Network"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="rn2903library.html" title="RN2903 LIBRARY"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">lorawan  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="things-network">
+<h1><strong>Things Network</strong><a class="headerlink" href="#things-network" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="applications-on-things-network">
+<h2><strong>Applications on Things Network</strong><a class="headerlink" href="#applications-on-things-network" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>By Applications, we mean whatever it is your devices communicate with on the internet. This could be as simple as an IFTTT Maker Applet or a visual flow using Node-RED to custom code on some server.</p></li>
+<li><p>Before you can communicate with devices, you will need to add the application to the network and register devices to it.</p></li>
+<li><p>There are multiple options to integrate applications with The Things Network, ranging from working directly with APIs, via more friendly SDKs or click-and-run Platform Integrations.</p></li>
+</ul>
+</div>
+<div class="section" id="building-an-application-on-things-network">
+<h2><strong>Building an application on Things Network</strong><a class="headerlink" href="#building-an-application-on-things-network" title="Permalink to this headline">¶</a></h2>
+<p>Devices can communicate with applications that they’ve been registered to. To register a device, you’ll first need to add an application.</p>
+<ol class="arabic simple">
+<li><p>In the console, click add application.</p></li>
+</ol>
+<ul class="simple">
+<li><p>For Application ID, choose a unique ID of lower case, alphanumeric characters and nonconsecutive - and _.</p></li>
+<li><p>For Application Description, enter anything you like.</p></li>
+<li><p>Leave the checkbox enabled to automatically register the application to your default region.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/pic7.png"><img alt="Alternative text" class="align-center" src="_images/pic7.png" style="width: 800px; height: 400px;" /></a>
+<ol class="arabic simple" start="2">
+<li><p>Click Add Application to finish.</p></li>
+</ol>
+<ul class="simple">
+<li><p>You will be redirected to the newly added Application page where you can find the generated App EUI and Access Keys.</p></li>
+</ul>
+<p><strong>From the screenshots below, you can see the application named anrg_app created by me and the application details.</strong></p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/pic9.png"><img alt="Alternative text" src="_images/pic9.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">anrg_app application creation</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/pic10.png"><img alt="Alternative text" src="_images/pic10.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">anrg_app application details</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="devices-on-things-network">
+<h2><strong>Devices on Things Network</strong><a class="headerlink" href="#devices-on-things-network" title="Permalink to this headline">¶</a></h2>
+<p>The Things Network is the first open source, decentralized infrastructure for the Internet of Things. The community edition is free for fair use. Learn how to connect your Things!</p>
+<p>Before your device can communicate via The Things Network, you will need to register it.</p>
+<p>Currently, The Things Network supports LoRaWAN for long range (~5 to 15km), low power (months to years on battery), but also low bandwidth (51 bytes/message) communication. We plan to support multiple Bluetooth Broadcast/Mesh networks and other networks as well.</p>
+<p>You can of course use The Things Node or Uno, but The Things Network supports any certified LoRaWAN device. The ones you can find under Hardware have been tested and documented by us or our users.</p>
+<p><strong>In our project we are using RN2903a module developed by Mirotechnology as our device.</strong></p>
+</div>
+<div class="section" id="device-registration">
+<h2><strong>Device Registration</strong><a class="headerlink" href="#device-registration" title="Permalink to this headline">¶</a></h2>
+<p>Before a device can communicate via The Things Network you need to register it with an application
+To use the default Over The Air Activation (OTAA) you will need to register your device with its Device EUI. See the documentation of your device for instructions, as for example that of The Things Uno.</p>
+<ol class="arabic">
+<li><p>Log in and open the Console.</p></li>
+<li><p>if you don’t have an application yet, you need to create one. For more information on how to do this have a look a the Applications section.</p></li>
+<li><p>Open the application to which you wish to add a device and click register device.</p>
+<ul>
+<li><p>For Device ID, choose a - for this application - unique ID of lower case, alphanumeric characters and nonconsecutive - and _.</p></li>
+<li><p>For Device EUI, copy-paste the one you retrieved from your device using the teraterm(see section 2).</p></li>
+<li><p>Leave the App Key to be generated..</p></li>
+<li><p>For App EUI, select the generated EUI from the list.</p>
+<a class="reference internal image-reference" href="_images/pic8.png"><img alt="Alternative text" class="align-center" src="_images/pic8.png" style="width: 800px; height: 400px;" /></a>
+</li>
+</ul>
+</li>
+<li><p>Click Register to finish.</p></li>
+</ol>
+<p>You will be redirected to the newly registered device where you can find the generated App Key needed to activate the device.</p>
+<p><strong>From the screenshots below, you can see the device anrg_dev1 created by me and its credentials. From the second screenshot you can see the appkey and appeui of the appplication to which this device is registered to.</strong></p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="_images/pic11.png"><img alt="Alternative text" src="_images/pic11.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">anrg_dev1 device creation and its details</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="_images/pic12.png"><img alt="Alternative text" src="_images/pic12.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">appEUI and appKey of the application to which anrg_dev1 device is registered to</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<p><strong>Thus, I have created an application called anrg_app and registered a device called anrg_dev1 to this application.</strong></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><strong>Things Network</strong></a><ul>
+<li><a class="reference internal" href="#applications-on-things-network"><strong>Applications on Things Network</strong></a></li>
+<li><a class="reference internal" href="#building-an-application-on-things-network"><strong>Building an application on Things Network</strong></a></li>
+<li><a class="reference internal" href="#devices-on-things-network"><strong>Devices on Things Network</strong></a></li>
+<li><a class="reference internal" href="#device-registration"><strong>Device Registration</strong></a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="rn2903library.html"
+                        title="previous chapter"><strong>RN2903 LIBRARY</strong></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="sendingdata.html"
+                        title="next chapter"><strong>Connecting RN2903a module to the Things Network</strong></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/thingsnetwork.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="sendingdata.html" title="Connecting RN2903a module to the Things Network"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="rn2903library.html" title="RN2903 LIBRARY"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">lorawan  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Sukruth Babu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.1.
+    </div>
+  </body>
+</html>

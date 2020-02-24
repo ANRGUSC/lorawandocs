@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>RN2903 LIBRARY &#8212; lorawan  documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Things Network" href="thingsnetwork.html" />
+    <link rel="prev" title="Making the first communication ready for LORA" href="connectingrn2903.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="thingsnetwork.html" title="Things Network"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="connectingrn2903.html" title="Making the first communication ready for LORA"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">lorawan  documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="rn2903-library">
+<h1><strong>RN2903 LIBRARY</strong><a class="headerlink" href="#rn2903-library" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="creating-the-rn2903-package-and-installing-it">
+<h2><strong>Creating the RN2903 package and installing it</strong><a class="headerlink" href="#creating-the-rn2903-package-and-installing-it" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>First we download the rn2903-lora-library file into our system.</p></li>
+<li><p>Then go ahead and create rn2903 folder inside rn2903-lora-library folder.</p></li>
+<li><p>Transfer all the files in rn2903-lora-library(<strong>except setup.py</strong>) folder to rn2903 folder.</p></li>
+<li><p>Open the command prompt.</p></li>
+<li><p>Go to rn2903-lora-library folder using the <strong>cd</strong> command.</p></li>
+<li><p>Run <strong>python setup.py build</strong> command.</p></li>
+<li><p>Then go ahead and run <strong>python setup.py install</strong> command.</p></li>
+<li><p>The above two commands buids the <strong>rn2903</strong> package and installs it in your system.</p></li>
+</ul>
+<p>The figure below illustrates this process.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="_images/pic5.png"><img alt="Alternative text" src="_images/pic5.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">Creating the RN2903 package and installing it</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="testing-different-helper-functions-in-rn2903-package">
+<h2><strong>Testing different helper functions in rn2903 package</strong><a class="headerlink" href="#testing-different-helper-functions-in-rn2903-package" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>list_serial_ports</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Prints the names of the serial ports for user to connect to</p></li>
+<li><p><strong>Input Arguments</strong>:
+None</p></li>
+<li><p><strong>Return Arguments</strong>:
+List of all serial ports connected</p></li>
+<li><p><strong>Usage</strong>:
+print(list_serial_ports())</p></li>
+</ul>
+</li>
+<li><p><strong>open</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Starts connection to the device at the serial port listed</p></li>
+<li><p><strong>Input Arguments</strong>:
+Serial port name(as a string)</p></li>
+<li><p><strong>Return Arguments</strong>:
+Rn2903 Object(used for communicating later). You can name it anything you like</p></li>
+<li><p><strong>Usage</strong>:
+connection1 = open(‘COM3’)</p></li>
+</ul>
+</li>
+<li><p><strong>status</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Checks if the device is connected returns result</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name</p></li>
+<li><p><strong>Return Arguments</strong>:
+None</p></li>
+<li><p><strong>Usage</strong>:
+print(status(connection1))</p></li>
+</ul>
+</li>
+<li><p><strong>startRX</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Sends all of the commands nessecary to set up the reciever with default values (radio pwr=14, watch dog timer=1 min).</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+startRX(connection1)</p></li>
+</ul>
+</li>
+<li><p><strong>receive</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Recieves a message and returns it as a string</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name</p></li>
+<li><p><strong>Return Arguments</strong>:
+Message received from sender(string) or error timeout</p></li>
+<li><p><strong>Usage</strong>: print(receive(connection1))</p></li>
+</ul>
+</li>
+<li><p><strong>startTX</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Sends all of the commands necessary to set up the sender with default values</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+startRX(connection1)</p></li>
+</ul>
+</li>
+<li><p><strong>send</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Sends a string to the reciever with a maximum of 44 characters</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name, text(as a string)</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+receive(connection1, text to send as a string)</p></li>
+</ul>
+</li>
+<li><p><strong>setFreq</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Sets the frequency</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 decimal representing the frequency, from 902000000 to 928000000 in  Hz</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+setFreq(connection1, 902000000)</p></li>
+</ul>
+</li>
+<li><p><strong>setPower</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Sets the power for radio</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name, signed decimal number representing the transceiver output power, from 2 to 20</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+setPwr(connection1, 14)</p></li>
+</ul>
+</li>
+<li><p><strong>setWDT</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Sets the watchdog timer for reciever</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name, decimal number representing the time-out length for the Watchdog Timer, from 0 to 4294967295 in ms. Set to ‘0’ to disable this functionality</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+setWDT(connection1, 100000)</p></li>
+</ul>
+</li>
+<li><p><strong>setSpr</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Spreading Factor</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name, string representing the spreading factor. Parameter values can  be: sf7, sf8, sf9, sf10, sf11 or sf12</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+setSpr(connection1, sf10)</p></li>
+</ul>
+</li>
+<li><p><strong>setBW</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Set Bandwidth</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name, decimal representing the operating radio bandwidth in kHz.   Parameter values can be: 125, 250, 500</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, false for failure</p></li>
+<li><p><strong>Usage</strong>:
+setBW(connection1, 250)</p></li>
+</ul>
+</li>
+<li><p><strong>raw_command</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Type the exact commands from the reference manual. It will send the device the command and return the result</p></li>
+<li><p><strong>Input Arguments</strong>:
+RN2903 Name, command(as a string)</p></li>
+<li><p><strong>Return Arguments</strong>:
+String from rn2903 module</p></li>
+<li><p><strong>Usage</strong>:
+raw_command(connection1, “sys get ver”)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="mac-commands">
+<h2><strong>MAC Commands</strong><a class="headerlink" href="#mac-commands" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>joinABP</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Connects the device to the gateway using ABP</p></li>
+<li><p><strong>Input Arguments</strong>:
+Serial port name(as a string), device address, network session key application key</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, or error message</p></li>
+<li><p><strong>Usage</strong>:
+joinABP(con,devAddr,nwkSKey,appSKey)</p></li>
+</ul>
+</li>
+<li><p><strong>joinOTAA</strong></p>
+<ul>
+<li><p><strong>Description</strong>:
+Connects the device to the gateway using OTAA</p></li>
+<li><p><strong>Input Arguments</strong>:
+Serial port name(as a string), appeui, appKey</p></li>
+<li><p><strong>Return Arguments</strong>:
+True for success, or error message</p></li>
+<li><p><strong>Usage</strong>:
+joinOTAA(con2, appEui, appKey)</p></li>
+</ul>
+</li>
+<li><p><strong>Variables to Define</strong></p>
+<ul>
+<li><p><strong>OTAA</strong>:</p>
+<ul>
+<li><p>appEui</p></li>
+<li><p>appKey</p></li>
+</ul>
+</li>
+<li><p><strong>ABP</strong>:</p>
+<ul>
+<li><p>devAddr</p></li>
+<li><p>nwkSKey</p></li>
+<li><p>appSKey</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>The below image shows the execution of the above said helper functions and their outputs:</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="_images/pic6.png"><img alt="Alternative text" src="_images/pic6.png" style="width: 800px; height: 400px;" /></a>
+<p class="caption"><span class="caption-text">Output of helper functions in rn2903 library</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>In the next section, we are going to set up the <strong>Things Network</strong>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><strong>RN2903 LIBRARY</strong></a><ul>
+<li><a class="reference internal" href="#creating-the-rn2903-package-and-installing-it"><strong>Creating the RN2903 package and installing it</strong></a></li>
+<li><a class="reference internal" href="#testing-different-helper-functions-in-rn2903-package"><strong>Testing different helper functions in rn2903 package</strong></a></li>
+<li><a class="reference internal" href="#mac-commands"><strong>MAC Commands</strong></a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="connectingrn2903.html"
+                        title="previous chapter"><strong>Making the first communication ready for LORA</strong></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="thingsnetwork.html"
+                        title="next chapter"><strong>Things Network</strong></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/rn2903library.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="thingsnetwork.html" title="Things Network"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="connectingrn2903.html" title="Making the first communication ready for LORA"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">lorawan  documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Sukruth Babu.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.1.
+    </div>
+  </body>
+</html>
