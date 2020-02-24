@@ -35,17 +35,21 @@ Devices can communicate with applications that they’ve been registered to. To 
 
 **From the screenshots below, you can see the application named anrg_app created by me and the application details.**
 
-.. image:: pic9.png
+.. figure:: pic9.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
 
-.. image:: pic10.png
+  anrg_app application creation
+
+.. figure:: pic10.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  anrg_app application details
 
 
 
@@ -95,17 +99,21 @@ You will be redirected to the newly registered device where you can find the gen
 
 **From the screenshots below, you can see the device anrg_dev1 created by me and its credentials. From the second screenshot you can see the appkey and appeui of the appplication to which this device is registered to.**
 
-.. image:: pic11.png
+.. figure:: pic11.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
 
-.. image:: pic12.png
+  anrg_dev1 device creation and its details
+
+.. figure:: pic12.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  appEUI and appKey of the application to which anrg_dev1 device is registered to
 
 **Thus, I have created an application called anrg_app and registered a device called anrg_dev1 to this application.**
 

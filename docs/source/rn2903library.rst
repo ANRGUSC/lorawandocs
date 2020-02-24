@@ -16,11 +16,13 @@
 
 The figure below illustrates this process.
 
-.. image:: pic5.png
+.. figure:: pic5.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  Creating the RN2903 package and installing it
 
 
 **Testing different helper functions in rn2903 package**
@@ -257,11 +259,13 @@ The figure below illustrates this process.
 
 The below image shows the execution of the above said helper functions and their outputs:
 
-.. image:: pic6.png
+.. figure:: pic6.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  Output of helper functions in rn2903 library
 
 In the next section, we are going to set up the **Things Network**.
 

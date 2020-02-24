@@ -7,11 +7,13 @@
 
 * A python script called OTAAsample.py is written to join to the Things Network using OTAA(Over the Air Activation). You can see the script in the image below.
 
-.. image:: pic13.png
+.. figure:: pic13.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  OTAAsample.py python script
 
 * In OTAAsample.py script, you need to change few things.
 
@@ -19,11 +21,13 @@
 
   2. Then you need to change the **appEUI** and **appKey**. You can find this by going to your registered device page and going to the bottom of the page as you can see in the image below.
 
-.. image:: pic12.png
+.. figure:: pic12.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  Getting appEUI and appKey
 
 
 

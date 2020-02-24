@@ -6,11 +6,13 @@
 
 First we need to find out which serial port our rn2903a module is connected to. As we can see from the image below, rn2903a module is connected to COM3 serial port.
 
-.. image:: pic1.png
+.. figure:: pic1.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  Finding the serial port to which rn2903 module is connected to
 
 For communicating with the module, one can use TeraTerm or Putty. In this project TeraTerm will be used. Once you download the TeraTerm, a few changes need to be made to communicate with rn2903a module.
   
@@ -18,20 +20,23 @@ For communicating with the module, one can use TeraTerm or Putty. In this projec
   Here change Recieve to CR+LF, Transmit to CR+LF and also  enable Local echo. Click on OK. 
   The changes that need to be made can be seen in the image below:
 
-  .. image:: pic2.png
+  .. figure:: pic2.png
     :width: 800
     :align: center
     :height: 400
     :alt: Alternative text
  
+    Changes to be made in Tera Term
 
 * **Click on setup->serial port**. Here change the speed to 57600 bps. This can be seen in the     image below:
 
-  .. image:: pic3.png
+  .. figure:: pic3.png
     :width: 800
     :align: center
     :height: 400
     :alt: Alternative text
+
+    Setting the baud rate in Tera Term
 
 Now we can go ahead and start communicating with the module.
 For communicating with the module, the default serial port setting is 57600 bps. Once set on your terminal, you can communicate with the module. The list of available command can be retrieved here.
@@ -63,11 +68,13 @@ Now we can also change the power to 14dB to get more power and better link budge
 
 The image below shows the execution of the above said commands on Teraterm and their corresponding outputs.
 
-.. image:: pic4.png
+.. figure:: pic4.png
   :width: 800
   :align: center
   :height: 400
   :alt: Alternative text
+
+  Execution of commands on Tera Term
 
 Next step is setting up the rn2903 library and playing with helper functions present in the **RN2903 library**. Please check out the next section of the documentation.
 
