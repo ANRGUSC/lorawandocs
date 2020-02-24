@@ -51,7 +51,7 @@ Now go ahead and open a terminal on windows and run this command -> **python OTA
 **Observing the packet reception from rn2903 module on the Things Network**
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-1. Go to **Things Network websit**e and go to your **Console**.
+1. Go to **Things Network website** and go to your **Console**.
 
 2. Then click on **Applications**. 
 

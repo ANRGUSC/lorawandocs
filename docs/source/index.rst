@@ -9,8 +9,8 @@ Welcome to lorawan's documentation!
    rn2903library
    thingsnetwork
    sendingdata
+   mqttpaho
    license
-   readme
    contents
 
 
