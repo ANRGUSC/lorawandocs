@@ -47,7 +47,7 @@
 6. Then in an infinte loop we are sending the packets with **payload "ABCD"** to the Things Network with an inter arrival time of 3 seconds.
 
 
-**Running the OTAAsample.py script.**
+**Running the OTAAsample.py script**
 +++++++++++++++++++++++++++++++++++++
 
 Now go ahead and open a terminal on windows and run this command -> **python OTAAsample.py**

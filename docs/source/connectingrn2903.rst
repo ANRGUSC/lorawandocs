@@ -1,4 +1,4 @@
-**Making the first communication ready for LORA**
+**Making the first communication ready for LoRa**
 =================================================
 
 **Setting up serial port communication using TeraTerm**
