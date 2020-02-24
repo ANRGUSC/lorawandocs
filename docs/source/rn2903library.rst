@@ -25,7 +25,7 @@ The figure below illustrates this process.
   Creating the RN2903 package and installing it
 
 
-**Testing different helper functions in rn2903 package**
+**Testing different helper functions in RN2903 package**
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 * **list_serial_ports**
