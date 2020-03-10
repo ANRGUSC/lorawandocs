@@ -38,7 +38,7 @@ Before running the script, a few things need to be changed in the script.
 
 Now run the script using **python paho_mqtt_v2.py** command on the Windows terminal.
 
-You can see the output on the Windows terminal. You could see the packets being sent and different parameters with which the packet was transmittes and received. 
+You can see the output on the Windows terminal. You can see the packets being sent and different parameters with which the packet was transmittes and received. 
 
 The below image shows the **output of the paho_mqtt_v2 script**.
 
