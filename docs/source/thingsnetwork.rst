@@ -1,6 +1,8 @@
 **Things Network**
 ==================
 
+The contents of this page has been referred from the Things Network website. The **link** to the websie is `Things Network <https://www.thethingsnetwork.org/docs/applications/>`_ .
+
 **Applications on Things Network**
 ++++++++++++++++++++++++++++++++++
 
