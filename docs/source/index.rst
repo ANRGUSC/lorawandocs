@@ -16,9 +16,4 @@ Welcome to LoraWAN's documentation!
    contents
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
