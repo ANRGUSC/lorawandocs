@@ -1,5 +1,6 @@
-Welcome to lorawan's documentation!
+Welcome to LoraWAN's documentation!
 ===================================
+
 
 .. toctree::
    :maxdepth: 10
