@@ -5,12 +5,12 @@
 **Creating the RN2903 package and installing it**
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
-* First we download the rn2903-lora-library file into our system.
+* First we download the **rn2903-lora-library** file into our system. You can download the **rn290-lora-library** from the ANRG github repository. The link to the repository is `github repo for rn2903-lora-library <https://github.com/ANRGUSC/rn2903-lora-library>`_. 
 * Then go ahead and create rn2903 folder inside rn2903-lora-library folder. 
 * Transfer all the files in rn2903-lora-library(**except setup.py**) folder to rn2903 folder.
 * Open the command prompt.
 * Go to rn2903-lora-library folder using the **cd** command.
-* Run **python setup.py build** command.
+* Run **python setup.py build** command. (Here **Python 3** is used) 
 * Then go ahead and run **python setup.py install** command.
 * The above two commands buids the **rn2903** package and installs it in your system.
 

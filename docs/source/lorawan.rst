@@ -37,7 +37,7 @@ Classes of Lora
   In addition to the class A structure of uplink followed by two downlink windows, class C further reduces latency on the downlink by keeping the receiver of the end-device open at all times that the device is not transmitting (half duplex). Based on this, the network server can initiate a downlink transmission at any time on the assumption that the end-device receiver is open, so no latency. The compromise is the power drain of the receiver (up to ~50mW) and so class C is suitable for applications where continuous power is available.
   For battery powered devices, temporary mode switching between classes A & C is possible, and is useful for intermittent tasks such as firmware over-the-air updates.
 
-LoraWAN Specification:
+LoraWAN Specifications
 +++++++++++++++++++++++
 
 * Standard:            LoRa WAN technology follows IEEE 802.15.4 standard
