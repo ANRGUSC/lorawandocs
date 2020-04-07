@@ -1,6 +1,18 @@
 LoraWAN
 =======
 
+LoraWAN architecture
+++++++++++++++++++++
+
+.. figure:: pic18.png
+  :width: 800
+  :align: center
+  :height: 400
+  :alt: Alternative text
+
+  LoraWAN architecture
+
+
 Classes of Lora
 +++++++++++++++
 
