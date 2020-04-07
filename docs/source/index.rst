@@ -12,8 +12,7 @@ Welcome to LoraWAN's documentation!
    thingsnetwork
    sendingdata
    mqttpaho
-   license
-   contents
+   
 
 
 
