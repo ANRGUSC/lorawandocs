@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'lorawan'
+project = 'LoraWAN'
 copyright = '2020, Sukruth Babu'
 author = 'Sukruth Babu'
 
