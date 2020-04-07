@@ -12,6 +12,15 @@ LoraWAN architecture
 
   LoraWAN architecture
 
+In the above archtecture, there are mainly three types of devices. They are end nodes, concentrator/gateway and network server.
+
+* End nodes - The end nodes are the sensor/iot devices. They maybe pet tracking, vending machine, gas monitoring etc.
+
+* Concentrator/gateway - This is the relay between the end nodes and the network server that transfers the data from the end nodes to the network server and vice versa.
+
+* Network server - This is the target destination to which the end nodes wants to transfer its data to. 
+
+The communication between end nodes and the concentrator/gateway uses RF(radio frequency). The communication between the concentrator/gateway uses 3G/Ethernet.  
 
 Classes of Lora
 +++++++++++++++
