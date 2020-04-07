@@ -60,9 +60,9 @@ The Things Network is the first open source, decentralized infrastructure for th
 
 Before your device can communicate via The Things Network, you will need to register it.
 
-Currently, The Things Network supports LoRaWAN for long range (~5 to 15km), low power (months to years on battery), but also low bandwidth (51 bytes/message) communication. We plan to support multiple Bluetooth Broadcast/Mesh networks and other networks as well.
+Currently, The Things Network supports LoraWAN for long range (~5 to 15km), low power (months to years on battery), but also low bandwidth (51 bytes/message) communication. We plan to support multiple Bluetooth Broadcast/Mesh networks and other networks as well.
 
-You can of course use The Things Node or Uno, but The Things Network supports any certified LoRaWAN device. The ones you can find under Hardware have been tested and documented by us or our users.
+You can of course use The Things Node or Uno, but The Things Network supports any certified LoraWAN device. The ones you can find under Hardware have been tested and documented by us or our users.
 
 **In our project we are using RN2903a module developed by Mirotechnology as our device.**
 

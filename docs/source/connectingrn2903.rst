@@ -1,4 +1,4 @@
-**Making the first communication ready for LoRa**
+**Making the first communication ready for Lora**
 =================================================
 
 **Setting up serial port communication using TeraTerm**
@@ -53,7 +53,7 @@ There are 3 level of commands :
 The different set of the commands are:
 
 * **sys get ver** returns the firmware version, it is a good way to ensure the circuit works.
-* **radio get mod** and **radio get freq**. These 2 first command indicates that the module is configured as LoRa device by default with a rx/tx frequency of 868.1Mhz.
+* **radio get mod** and **radio get freq**. These 2 first command indicates that the module is configured as Lora device by default with a rx/tx frequency of 868.1Mhz.
 * **radio get sf** -> The spread factor parameters defines the sensitivity of the reception, with a such value (sf12 is the more sensitive) the SNR can be up to -20dB. This also impacts the duration of  the transmission that becomes longer.
 * **radio get bw** -> The used bandwidth determine time on air and sensitivity. With 125KHz the sensitivity is better but time on air is longer. Chip is capable from 125KHz to 500KHz. The time on air is doubled from 125KHz to 250KHz. 
   With a 125kHz bandwidth and a spread factor of 12, the time on air duration is about 1 second.

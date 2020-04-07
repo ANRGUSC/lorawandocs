@@ -1,30 +1,30 @@
-LoRa
+Lora
 ====
 
 What is it?
 +++++++++++
 
-LoRa (Long Range) is a low-power wide-area network (LPWAN) technology. It is based on spread spectrum modulation techniques derived from chirp spread spectrum (CSS) technology.[1][2] It was developed by Cycleo of Grenoble, France and acquired by Semtech the founding member of the LoRa Alliance.
+Lora (Long Range) is a low-power wide-area network (LPWAN) technology. It is based on spread spectrum modulation techniques derived from chirp spread spectrum (CSS) technology.[1][2] It was developed by Cycleo of Grenoble, France and acquired by Semtech the founding member of the LoRa Alliance.
 
-LoRaWAN defines the communication protocol and system architecture for the network, while the LoRa physical layer enables the long-range communication link. LoRaWAN is also responsible for managing the communication frequencies, data rate, and power for all devices.Devices in the network are asynchronous and transmit when they have data available to send. Data transmitted by an end-node device is received by multiple gateways, which forward the data packets to a centralized network server. The network server filters duplicate packets, performs security checks, and manages the network. Data is then forwarded to application servers. The technology shows high reliability for the moderate load, however, it has some performance issues related to sending acknowledgements.
+LoraWAN defines the communication protocol and system architecture for the network, while the Lora physical layer enables the long-range communication link. LoraWAN is also responsible for managing the communication frequencies, data rate, and power for all devices.Devices in the network are asynchronous and transmit when they have data available to send. Data transmitted by an end-node device is received by multiple gateways, which forward the data packets to a centralized network server. The network server filters duplicate packets, performs security checks, and manages the network. Data is then forwarded to application servers. The technology shows high reliability for the moderate load, however, it has some performance issues related to sending acknowledgements.
 
 
-Features of LoRa
+Features of Lora
 ++++++++++++++++
 
-* LoRa uses license-free sub-gigahertz radio frequency bands like 433 MHz, 868 MHz (Europe), 915 MHz (Australia and North America) and 923 MHz (Asia). LoRa enables long-range transmissions (more than 10 km in rural areas) with low power consumption.[4] The technology covers the physical layer, while other technologies and protocols such as LoRaWAN (Long Range Wide Area Network) cover the upper layers. 
+* Lora uses license-free sub-gigahertz radio frequency bands like 433 MHz, 868 MHz (Europe), 915 MHz (Australia and North America) and 923 MHz (Asia). Lora enables long-range transmissions (more than 10 km in rural areas) with low power consumption.[4] The technology covers the physical layer, while other technologies and protocols such as LoraWAN (Long Range Wide Area Network) cover the upper layers. 
 
-* In January 2018, new LoRa chipsets were announced, with reduced power consumption, increased transmission power, and reduced size compared to older generation.
+* In January 2018, new Lora chipsets were announced, with reduced power consumption, increased transmission power, and reduced size compared to older generation.
 
-* LoRa devices have geolocation capabilities used for triangulating positions of devices via timestamps from gateways.
+* Lora devices have geolocation capabilities used for triangulating positions of devices via timestamps from gateways.
 
-* LoRa and LoRaWAN permit long-range connectivity for Internet of Things (IoT) devices in different types of industries.
+* Lora and LoraWAN permit long-range connectivity for Internet of Things (IoT) devices in different types of industries.
 
 Classes of LoRa
 +++++++++++++++
 
 * **Class A - Lowest power, bi-directional end-devices:**
-  The default class which must be supported by all LoRaWAN end-devices, class A communication is always initiated by the end-device and is fully asynchronous. Each uplink transmission can be sent at any time and is followed by two short downlink windows, giving the opportunity for bi-directional communication, or network control commands if needed. This is an ALOHA type of  protocol.
+  The default class which must be supported by all LoraWAN end-devices, class A communication is always initiated by the end-device and is fully asynchronous. Each uplink transmission can be sent at any time and is followed by two short downlink windows, giving the opportunity for bi-directional communication, or network control commands if needed. This is an ALOHA type of  protocol.
   The end-device is able to enter low-power sleep mode for as long as defined by its own application: there is no network requirement for periodic wake-ups. This makes class A the lowest power operating mode, while still allowing uplink communication at any time.
   Because downlink communication must always follow an uplink transmission with a schedule defined by the end-device application, downlink communication must be buffered at the network server until the next uplink event.
 
@@ -35,7 +35,7 @@ Classes of LoRa
   In addition to the class A structure of uplink followed by two downlink windows, class C further reduces latency on the downlink by keeping the receiver of the end-device open at all times that the device is not transmitting (half duplex). Based on this, the network server can initiate a downlink transmission at any time on the assumption that the end-device receiver is open, so no latency. The compromise is the power drain of the receiver (up to ~50mW) and so class C is suitable for applications where continuous power is available.
   For battery powered devices, temporary mode switching between classes A & C is possible, and is useful for intermittent tasks such as firmware over-the-air updates.
 
-LoRa WAN Specification:
+Lora WAN Specification:
 +++++++++++++++++++++++
 
 * Standard:            LoRa WAN technology follows IEEE 802.15.4 standard
@@ -50,12 +50,12 @@ LoRa WAN Specification:
 
 * Range:                  Up to 20 KM
 
-What is LoRa Gateway?
+What is Lora Gateway?
 +++++++++++++++++++++
 
-LoRa gateway is a sophisticated software architecture designed to carry out communication in LoRa network terminology. It acts as a smart hub between end devices and application network server. In future, it will be preinstalled on all IoT enabled hardware to support wide range of applications.
+Lora gateway is a sophisticated software architecture designed to carry out communication in Lora network terminology. It acts as a smart hub between end devices and application network server. In future, it will be preinstalled on all IoT enabled hardware to support wide range of applications.
 
-Advantages of LoRa WAN
+Advantages of Lora WAN
 ++++++++++++++++++++++
 
 * Long battery life for devices and sensors due to low power consumption
