@@ -1,4 +1,4 @@
-**Receiving data from Things Network server using MQTT Paho**
+**Receiving data from Things Network server using Paho MQTT**
 =============
 
 
