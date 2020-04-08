@@ -2,23 +2,23 @@
 =============
 
 
-**What is Paho**
-++++++++++++++++
+What is Paho
+++++++++++++
 
 The Paho project provides scalable open-source implementations of open and standard messaging protocols aimed at new, exisiting, and emerging applications for Machine-to-Machine (M2M) and Internet of Things (IoT).
 
 Paho reflects the inherent physical and cost contraints of device connectivity. Objectives include effective levels of decoupling between devices and applications, designed to keep markets open and encourage the rapid growth of scalable Web and Enterprise middleware and applications. Paho initially started with MQTT publish/subscribe client implementations for use on embedded platforms, and in the future will bring corresponding server support as determined by the community. 
 
-**Installing Paho-MQTT Client**
-+++++++++++++++++++++++++++++++
+Installing Paho-MQTT Client
++++++++++++++++++++++++++++
 
 You can Install the MQTT client using PIP with the command:
 
 **pip install paho-mqtt**
 
 
-**Eclipse Paho MQTT Client script**
-++++++++++++++++++++++++++++++++++++
+Eclipse Paho MQTT Client script
++++++++++++++++++++++++++++++++
 
 The image below shows the mqtt paho client script. Using this the user would be able to get the data on his local instance. Therefore he would be able to save the sensor data if needed.
 

@@ -1,5 +1,5 @@
-LoraWAN
-=======
+**LoraWAN**
+===========
 
 LoraWAN architecture
 ++++++++++++++++++++

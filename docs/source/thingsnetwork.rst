@@ -3,8 +3,8 @@
 
 The contents of this page has been referred from the Things Network website. The **link** to the website is `Things Network <https://www.thethingsnetwork.org/docs/applications/>`_ .
 
-**Applications on Things Network**
-++++++++++++++++++++++++++++++++++
+Applications on Things Network
+++++++++++++++++++++++++++++++
 
 * By Applications, we mean whatever it is your devices communicate with on the internet. This could be as simple as an IFTTT Maker Applet or a visual flow using Node-RED to custom code on some server.
 
@@ -12,8 +12,8 @@ The contents of this page has been referred from the Things Network website. The
 
 * There are multiple options to integrate applications with The Things Network, ranging from working directly with APIs, via more friendly SDKs or click-and-run Platform Integrations.
 
-**Building an application on Things Network**
-+++++++++++++++++++++++++++++++++++++++++++++
+Building an application on Things Network
++++++++++++++++++++++++++++++++++++++++++
 
 Devices can communicate with applications that they’ve been registered to. To register a device, you’ll first need to add an application.
 
@@ -55,8 +55,8 @@ Devices can communicate with applications that they’ve been registered to. To 
 
 
 
-**Devices on Things Network**
-+++++++++++++++++++++++++++++
+Devices on Things Network
++++++++++++++++++++++++++
 
 The Things Network is the first open source, decentralized infrastructure for the Internet of Things. The community edition is free for fair use. Learn how to connect your Things!
 
@@ -68,8 +68,8 @@ You can of course use The Things Node or Uno, but The Things Network supports an
 
 **In our project we are using RN2903a module developed by Mirotechnology as our device.**
 
-**Device Registration**
-+++++++++++++++++++++++
+Device Registration
++++++++++++++++++++
 
 Before a device can communicate via The Things Network you need to register it with an application
 To use the default Over The Air Activation (OTAA) you will need to register your device with its Device EUI. See the documentation of your device for instructions, as for example that of The Things Uno.

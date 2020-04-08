@@ -31,8 +31,8 @@
 
 
 
-**What does OTAAsample.py script do? and how to run this script**
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+What does OTAAsample.py script do? and how to run this script
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. You open a connection to the RN2903 module using the **open function** in the rn2903 library.
 
@@ -47,13 +47,13 @@
 6. Then in an infinte loop we are sending the packets with **payload "ABCD"** to the Things Network with an inter arrival time of 3 seconds.
 
 
-**Running the OTAAsample.py script**
-+++++++++++++++++++++++++++++++++++++
+Running the OTAAsample.py script
+++++++++++++++++++++++++++++++++
 
 Now go ahead and open a terminal on windows and run this command -> **python OTAAsample.py**
 
-**Observing the packet reception from rn2903 module on the Things Network**
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Observing the packet reception from rn2903 module on the Things Network
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 1. Go to **Things Network website** and go to your **Console**.
 

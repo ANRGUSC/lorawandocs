@@ -2,8 +2,8 @@
 ==================
 
 
-**Creating the RN2903 package and installing it**
-+++++++++++++++++++++++++++++++++++++++++++++++++
+Creating the RN2903 package and installing it
++++++++++++++++++++++++++++++++++++++++++++++
 
 * First we download the **rn2903-lora-library** file into our system. You can download the **rn290-lora-library** from the ANRG github repository. The **link** to the repository is `github repo for rn2903-lora-library <https://github.com/ANRGUSC/rn2903-lora-library>`_ . 
 * Then go ahead and create rn2903 folder inside rn2903-lora-library folder. 
@@ -25,8 +25,8 @@ The figure below illustrates this process.
   Creating the RN2903 package and installing it
 
 
-**Testing different helper functions in RN2903 package**
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Testing different helper functions in RN2903 package
+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 * **list_serial_ports**
 
@@ -210,8 +210,8 @@ The figure below illustrates this process.
   * **Usage**: 
     raw_command(connection1, “sys get ver”)
 
-**MAC Commands**
-++++++++++++++++
+MAC Commands
+++++++++++++++
 
 * **joinABP**
 
